@@ -4,6 +4,7 @@ To Do
 
 - update accepted by QIP
 - talk 
+  - LHP with ss gs is MA-complete
   - with xxx
   - QIP, xxxx
   - Joint center for quantum information and computer science, University of Maryland, Dec, 2023.
