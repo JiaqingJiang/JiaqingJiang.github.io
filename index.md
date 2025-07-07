@@ -1,6 +1,6 @@
 
 
-<html><head><meta http-equiv="Content-Type" content="width=device-width, initial-scale=1">  
+<html><head>
 
 <title>Jiaqing Jiang</title>
   <style type="text/css">
@@ -19,11 +19,16 @@
     ul {
       font-size: 17px;
     }
-    p { margin:0.1em;
-    font-size: 17px;}
+    p { 
+      margin: 0.1em;
+    font-size: 17px;
+    }
+    i {
+      font-size: 17px;
+    }
     body {
       font-family:  Verdana, Helvetica, Arial, sans-serif;
-      font-size:19px;
+      font-size:17px;
       margin-top: 1em;
 			margin-bottom:100px;
 			margin-right:50px;
@@ -90,18 +95,17 @@
   <h3 align="left">Recent Manuscripts</h3>
 	<p style="margin-left:2em; font-size:17px;"> (For manuscript with &#9632; all authors have equal contribution and are listed in alphabetical order. The two papers with <span class="red-star" style="color: red;">★</span> are the ones I really like and encourage you to read :) </p>
   <ul style="list-style-type:square; margin-left:1em; font-size:17px;">
-     <li> <i>
-       Gibbs state preparation for commuting Hamiltonian: Mapping to classical Gibbs sampling</i>, 2024 <p style="margin-bottom:0.3em"> </p>
+     <li> <i>Gibbs state preparation for commuting Hamiltonian: Mapping to classical Gibbs sampling</i>, 2024 
+       <p style="margin-bottom:0.3em"> </p>
       <p> Yeongwoo Hwang, Jiaqing Jiang </p>
      <p> [QIP 2025 Contributed Talk],
        [<a href="https://arxiv.org/pdf/2410.04909">Arxiv:2410.04909</a>] </p> 
-    </p>
     </li>
   </ul>  
   <ul style="list-style-type:circle;margin-left:1em">
  	 <li> <i> Positive bias makes tensor-network contraction tractable </i>, 2024 
      <p style="margin-bottom:0.3em"> </p>
-    <p> Jiaqing Jiang, Jielun Chen </p>
+    <p> Jiaqing Jiang, Jielun Chen, Norbert Schuch, Dominik Hangleiter </p>
     <p> [QIP 2025 Contributed Talk] [Accepted by STOC 2025]  
     [<a href="https://arxiv.org/pdf/2410.05414">Arxiv:2410.05414</a>] </p>
   </li>
@@ -146,6 +150,7 @@ qubits</i>, 2023
     </li>
   </ul>
 </div>
+
 
 
 
