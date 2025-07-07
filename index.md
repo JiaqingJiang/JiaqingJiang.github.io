@@ -2,7 +2,7 @@
 
 <html><head>
 
-<title>Jiaqing Jiang</title>
+<title></title>
   <style type="text/css">
     html {
       max-width: 1200px;
