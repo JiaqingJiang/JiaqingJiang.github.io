@@ -19,6 +19,8 @@
     ul {
       font-size: 17px;
     }
+    p { margin:0.1em;
+    font-size: 17px;}
     body {
       font-family:  Verdana, Helvetica, Arial, sans-serif;
       font-size:19px;
@@ -47,17 +49,9 @@
      .bottom-three {
      margin-bottom: 0.5cm;
   }
-  p { margin:0.1em;
-    font-size: 17px;}
 </style>
 
 </head>
-
-
-
-
-
-
 
 
 
@@ -99,7 +93,7 @@
      <li> <i>
        Gibbs state preparation for commuting Hamiltonian: Mapping to classical Gibbs sampling</i>, 2024 <p style="margin-bottom:0.3em"> </p>
       <p> Yeongwoo Hwang, Jiaqing Jiang </p>
-     <p>  [QIP 2025 Contributed Talk],
+     <p> [QIP 2025 Contributed Talk],
        [<a href="https://arxiv.org/pdf/2410.04909">Arxiv:2410.04909</a>] </p> 
     </p>
     </li>
