@@ -1,196 +1,113 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jiaqing Jiang</title>
-  <style>
+<title>Jiaqing Jiang</title>
+  <style type="text/css">
     html {
       max-width: 1200px;
-      margin: 1em 50px 100px;
-    }
-    body {
-      font-family: Verdana, Helvetica, Arial, sans-serif;
-      font-size: 17px;
-      font-weight: 400;
-      font-style: normal;
-      line-height: 1.32;
-      margin: 1em 50px 100px;
-    }
-    p {
-      margin: 0;
-      font-size: inherit;
-    }
-    ul {
-      font-size: inherit;
-      padding-left: 2em;
-      margin-top: 0.35em;
-      margin-bottom: 0.75em;
+              margin-top: 1em;
+			margin-bottom:100px;
+			margin-right:50px;
+			margin-left:50px;
     }
     li {
-      margin-top: 0;
-      line-height: inherit;
-      text-indent: 0;
+      font-size: 17px;
+      margin-top: 1em;
+      line-height: 125%;
     }
-    h1 {
-      font-family: inherit;
-      font-size: 34px;
-      font-weight: 700;
-      line-height: 1.2;
-      margin: 0 0 0.35em;
+    ul {
+      font-size: 17px;
     }
-    h3 {
-      font-family: inherit;
-      font-size: 19.89px;
-      font-weight: 700;
-      line-height: 1.25;
-      margin: 1.25em 0 0.45em;
+    p { 
+      margin: 0.1em;
+    font-size: 17px;
     }
-    h4 {
-      font-family: inherit;
-      font-size: 18px;
-      font-weight: 700;
-      font-style: normal;
-      line-height: 1.3;
-      margin: 1.1em 0 0.35em;
-      text-indent: 0;
+    i {
+      font-size: 17px;
     }
-    a {
+    body {
+      font-family:  Verdana, Helvetica, Arial, sans-serif;
+      font-size:17px;
+      margin-top: 1em;
+			margin-bottom:100px;
+			margin-right:50px;
+			margin-left:50px;
+    }
+    a { 
+      color: #17202A;
+      text-decoration:none;
+      font-weight : 300;
+    }
+    a:hover { 
+      color: #17202A;
+      text-decoration:underline;
+    }
+     a:link { 
       color: #1547ba;
-      text-decoration: none;
-      font-weight: inherit;
+     text-decoration:none;
     }
-    a:hover {
-      text-decoration: underline;
-    }
-    a:link, a:visited {
+    a:visited { 
       color: #1547ba;
+     text-decoration:none;
     }
-    #News, #Publications, #Talks, #Activities {
-      clear: both;
-    }
-    .subsection-mark {
-      color: #1547ba;
-      font-size: 22px;
-      line-height: 1;
-      margin-right: 0.4em;
+     .bottom-three {
+     margin-bottom: 0.5cm;
+  }
+    .portrait {
+      float: right;
+      width: 250px;
+      height: auto;
+      padding: 0 0 1em 1.5em;
     }
     .intro {
       margin-left: 2em;
     }
     .paragraph-gap {
-      margin-bottom: 0.5em;
+      margin-bottom: 0.7em;
     }
-    .news-list, .paper-list, #Talks > ul, #Activities > ul {
-      list-style-type: circle;
-      list-style-position: outside;
-      margin-left: 0;
-      padding-left: 2em;
-    }
-    .paper-list {
-      margin-top: 0.35em;
-      margin-bottom: 0.9em;
-      margin-left: 2em;
-      padding-left: 1.4em;
-    }
-    .paper-list > li {
-      position: relative;
-    }
-    .paper-list > li::marker {
+    #about::after {
       content: "";
+      display: block;
+      clear: both;
     }
-    .paper-list > li::before {
-      content: "";
-      position: absolute;
-      left: -1.4em;
-      top: 0.53em;
-      width: 0.35em;
-      height: 0.35em;
-      border: 1px solid currentColor;
-      border-radius: 50%;
-      box-sizing: border-box;
-    }
-    .paper-list > li + li {
-      margin-top: 0.65em;
-    }
-    .news-list > li + li, #Activities > ul > li + li {
-      margin-top: 0.35em;
-    }
-    #Talks > ul > li + li {
-      margin-top: 0.65em;
-    }
-    .paper-list > li > i {
-      font-size: 17px;
-      font-style: italic;
-      font-weight: 400;
-    }
-    .paper-list > li > p {
-      margin-left: 0;
-      font-size: inherit;
-      line-height: inherit;
-    }
-    .paper-list .authors {
-      margin-top: 0.08em;
-    }
-    #Talks > ul > li {
-      margin-left: 0 !important;
-    }
-    #Talks ul ul {
-      list-style-type: disc;
-      margin: 0.12em 0 0;
-      padding-left: 1.35em;
-      font-size: inherit;
-    }
-    #Talks ul ul li {
-      margin-top: 0;
-      line-height: 1.25;
-    }
-    .portrait {
-      float: right;
-      width: 250px;
-      padding: 1em;
+    #News, #Publications, #Talks, #Activities {
+      clear: both;
     }
     @media (max-width: 700px) {
       html {
-        margin: 1em 16px 50px;
+        margin-left: 16px;
+        margin-right: 16px;
       }
       body {
-        margin: 0;
+        margin-left: 0;
+        margin-right: 0;
       }
       .portrait {
         width: 150px;
-        padding: 0 0 1em 1em;
+        padding: 0 0 0.75em 1em;
       }
-      .intro, h4 {
+      .intro {
         margin-left: 0;
-      }
-      .paper-list, .news-list, #Talks > ul, #Activities > ul {
-        margin-left: 0;
-        padding-left: 1.4em;
       }
     }
     @media (max-width: 420px) {
       .portrait {
         float: none;
         display: block;
-        padding: 0 0 1em;
+        padding: 0 0 0.75em;
       }
     }
-  </style>
-</head>
-<body>
+</style>
 
-  <div id="main">
-    <h1>Jiaqing Jiang</h1>
-  </div>
-  <div id="contact">
-    <b>Email:</b> jjiang5 [at] berkeley [dot] edu
-  </div>
-  <p>
-    <a href="https://scholar.google.com/citations?hl=en&amp;user=j4yHi7AAAAAJ">Google Scholar</a>,
-    <a href="./cv.pdf">CV</a>,
-    <a href="https://thesis.caltech.edu/17250/">Thesis</a>
-  </p>
+</head>
+
+
+
+<div id="main">
+  <h1 align="left">Jiaqing Jiang</h1>
+</div>
+<div id="contact">
+  <b>Email:</b> jjiang5 [at] berkeley [dot] edu
+  <br>
+</div>
+<p> <a href="https://scholar.google.com/citations?hl=en&user=j4yHi7AAAAAJ">Google Scholar</a>, <a href="./cv.pdf">CV</a>,  <a href="https://thesis.caltech.edu/17250/">Thesis</a>  </p>
   
 <p style="color: red; margin-top: 1em;">
   I am seeking faculty/industry jobs in the 2026–27 cycle!
@@ -249,176 +166,178 @@
     </ul>
   </div>
 
-  <div id="Publications">
-    <h3>Selected Research</h3>
 
-    <h4><span class="subsection-mark" aria-hidden="true">■</span>General quantum algorithms</h4>
-    <p class="intro">
-      I develop quantum algorithms for preparing Gibbs states and estimating their
-      properties, with the goal of making quantum thermal-state simulation more
-      efficient.
-    </p>
-    <ul class="paper-list">
-      <li>
-        <i>Quantum Metropolis Sampling via Weak Measurement</i>, 2024.
-        <p class="authors">Jiaqing Jiang, Sandy Irani</p>
-        <p>
-          [QIP 2025 Contributed Talk],
-          [<a href="https://arxiv.org/abs/2406.16023">Arxiv:2406.16023</a>]
-        </p>
-      </li>
-      <li id="single-trajectory-paper">
-        <i>Predicting properties of quantum thermal states from a single trajectory</i>, 2026.
-        <p class="authors">Jiaqing Jiang, Jiaqi Leng, Lin Lin</p>
-        <p>[<a href="https://arxiv.org/abs/2602.12539">Arxiv:2602.12539</a>]</p>
-      </li>
-      <li>
-        <i>Accelerating quantum Gibbs sampling without quantum walks</i>, 2026.
-        <p class="authors">Jiaqi Leng, Jiaqing Jiang, Lin Lin</p>
-        <p>[<a href="https://arxiv.org/abs/2604.22996">Arxiv:2604.22996</a>]</p>
-      </li>
+
+
+<div id="Publications">
+  <h3 align="left">Recent Manuscripts</h3>
+	<p style="margin-left:2em; font-size:17px;"> (For manuscript with &#9632; all authors have equal contribution and are listed in alphabetical order. The two papers with <span class="red-star" style="color: red;">★</span> are the ones I really like and encourage you to read :) </p>
+
+ <ul style="list-style-type:circle; margin-left:1em; font-size:17px;">
+<li> <span class="red-star" style="color: red;">★</span>  <b> Predicting properties of quantum thermal states from a single trajectory</b>, 2026. 
+   <p style="margin-bottom:0.3em"> </p>
+   <p>
+     Jiaqing Jiang, Jiaqi Leng, Lin Lin
+   </p>
+   <p>
+    [<a href="https://arxiv.org/abs/2602.12539">Arxiv:2602.12539</a>]
+   </p>
+</li>
+  </ul>  
+
+
+ <ul style="list-style-type:circle; margin-left:1em; font-size:17px;">
+     <li> <i>High-Temperature Fermionic Gibbs States are Mixtures of Gaussian States</i>, 2025 
+       <p style="margin-bottom:0.3em"> </p>
+      <p> Akshar Ramkumar, Yiyi Cai, Yu Tong, Jiaqing Jiang </p>
+     <p> [QIP 2026 Contributed Talk],
+       [<a href="https://arxiv.org/pdf/2505.09730">Arxiv:2505.09730</a>] </p> 
+    </li>
+  </ul>  
+ 
+  <ul style="list-style-type:square; margin-left:1em; font-size:17px;">
+     <li> <i>Gibbs state preparation for commuting Hamiltonian: Mapping to classical Gibbs sampling</i>, 2024 
+       <p style="margin-bottom:0.3em"> </p>
+      <p> Yeongwoo Hwang, Jiaqing Jiang </p>
+     <p> [QIP 2025 Contributed Talk],
+       [<a href="https://arxiv.org/pdf/2410.04909">Arxiv:2410.04909</a>] </p> 
+    </li>
+  </ul>  
+  <ul style="list-style-type:circle;margin-left:1em">
+ 	 <li> <i> Positive bias makes tensor-network contraction tractable </i>, 2024 
+     <p style="margin-bottom:0.3em"> </p>
+    <p> Jiaqing Jiang, Jielun Chen, Norbert Schuch, Dominik Hangleiter </p>
+    <p> [QIP 2025 Contributed Talk] [Accepted by STOC 2025]  
+    [<a href="https://arxiv.org/pdf/2410.05414">Arxiv:2410.05414</a>] </p>
+  </li>
+ <li> <span class="red-star" style="color: red;">★</span>  <b> Quantum Metropolis Sampling via Weak Measurement</b>, 2024. 
+   <p style="margin-bottom:0.3em"> </p>
+   <p>
+     Jiaqing Jiang, Sandy Irani
+   </p>
+   <p>
+     [QIP 2025 Contributed Talk], [<a href="https://arxiv.org/pdf/2406.16023">Arxiv:2406.16023</a>]
+   </p>
+</li>
+    <li> <i> Sign problem in tensor network contraction, 2024. </i>
+      <p style="margin-bottom:0.3em"> </p>
+      <p>
+        Jielun Chen, Jiaqing Jiang, Dominik Hangleiter, Norbert Schuch.
+      </p>
+      <p>
+     [<a href="https://journals.aps.org/prxquantum/abstract/10.1103/PRXQuantum.6.010312">PRX Quantum</a>.]  , [<a href="https://arxiv.org/pdf/2404.19023">Arxiv:2404.19023</a>]
+      </p>
+</li>
+ <li> <span class="red-star" style="color: red;">★</span> <b> Local Hamiltonian Problem with succinct ground state is MA-Complete, 2023. </b>
+   <p style="margin-bottom:0.3em"> </p>
+   <p>
+     Jiaqing Jiang.
+   </p>
+   <p>
+     [QIP 2024 Contributed Talk],[Accepted by PRX Quantum], [<a href="https://arxiv.org/pdf/2309.10155">Arxiv:2309.10155</a>]
+   </p>
+</li>
+</ul>
+<p style="margin-bottom:0.3em"> </p>
+<ul style="list-style-type:square;margin-left:1em">
+    <li>  <i>Commuting Local Hamiltonian problem on 2D beyond
+qubits</i>, 2023
+      <p>
+        Sandy Irani, Jiaqing Jiang.
+      </p>
+     <p>
+       [QIP 2024 Contributed Talk], [<a href="https://arxiv.org/pdf/2309.04910.pdf">Arxiv:2309.04910</a>]
+      </p> 
+    </li>
+  </ul>
+</div>
+
+
+
+
+
+
+<div id="Talks">
+  <h3 align="left">Recent Talks</h3>
+  
+   <ul>    <li style="margin-left:1em">  Predicting properties of quantum thermal states from a single trajectory,   
+      <a href="https://arxiv.org/abs/2602.12539">Arxiv:2602.12539</a>;
+   <a href="./slides/IPAM2026.pdf">[1-hour slides]</a>,  <a href="https://youtu.be/gWBHy5QH3i4?si=f0_ppC1cmHY9X2jm">[video]</a>  </i>
+ 	<ul>
+	 	 <li> IPAM workshop,  New Frontiers in Quantum Algorithms for Open Quantum Systems, UCLA, January, 2026. </li>
+	</ul>
+</ul> 
+
+ 
+  <ul>    <li style="margin-left:1em">  How Hamiltonian Complexity differs from Quantum Chemistry,   <a href="./slides/HC_differ_QC.pptx">[1-hour slides]</a>,  <a href="https://simons.berkeley.edu/talks/jiaqing-jiang-simons-institute-2025-07-10">[video]</a>  </i>
+ 	<ul>
+	 	 <li> Quantum Summer Cluster Workshop, Simons Institute, UC Berkeley, July, 2025. </li>
+	</ul>
+</ul> 
+
+<ul>
+  <li style="margin-left:1em"> Quantum Metropolis algorithm via weak measurement, 
+    <a href="https://arxiv.org/abs/2406.16023">Arxiv:2406.16023</a>;
+    <a href="./slides/QMetropolis.pptx">[1-hour slides].</a>
+     <a href="https://www.youtube.com/watch?v=SmgJn3Nlj1I">[video]</a>
+		<ul>
+      <li> Quantum Information Processing (QIP 2025), March, 2025.</li>
+    	<li>MIT Seminar, MIT, August, 2024.</li>
+      <li> Ohio State University, September, 2024</li>
+      <li> University of Waterloo, Quantum Innovators workshop, November, 2024 </li> 
+      <li> Nanjing University, November, 2024.</li>
+      <li> Theory Seminar, Caltech, November, 2024.</li>
     </ul>
-
-    <h4><span class="subsection-mark" aria-hidden="true">■</span>Specific many-body systems</h4>
-    <p class="intro">
-      I study concrete many-body systems to identify physically relevant problems
-      where quantum computers may offer an advantage. Recently I have been working
-      on quantum impurity models, a key building block of dynamical mean-field theory
-      (DMFT) for studying interacting electrons.
-    </p>
-    <ul class="paper-list">
-      <li id="impurity-paper">
-        <i>Polynomial-time classical and quantum simulation of quantum impurity models</i>, 2026.
-        <p class="authors">Jiaqing Jiang, Nathan Ju, Ojas Parekh, Chaithanya Rayudu, Andrew Zhao</p>
-        <p>[<a href="https://arxiv.org/abs/2610.02167">Arxiv:2610.02167</a>]</p>
-      </li>
+  </li>
+  <li style="margin-left:1em"> Gibbs state preparation for commuting Hamiltonian: Mapping to classical Gibbs sampling, <a href="https://arxiv.org/pdf/2410.04909">Arxiv:2410.04909</a>.  <a href="https://www.youtube.com/watch?v=Z5rLz9ihIpU">[video]</a>
+    <ul> 
+       <li> Quantum Information Processing (QIP 2025), March, 2025.</li>
+      <li> Workshop on Mathematical Challenges of Quantum Algorithms for Open Quantum Systems, Simons Institute, Berkeley, October 2024.</li>
     </ul>
+  </li>
+   <li style="margin-left:1em"> Introduction to Commuting Local Hamiltonian problems, 
+      <a href="./slides/CLHP_intro.pptx">[45-mins slides].</a> <a href="https://www.youtube.com/watch?v=h1dsIeC_xx8">[video].</a>
+      <ul>  
+  			<li> workshop on Quantum PCP, Area Laws, and Quantum Gravity, Simons Institute, Berkeley, Mar, 2024. </li>
+      </ul>  
+  </li>
+   <li style="margin-left:1em">  Local Hamiltonian Problem with succinct ground state is MA-complete 
+  	<a href="https://arxiv.org/abs/2309.10155">Arxiv:2309.10155</a>;  
+  	<a href="./slides/LHP_ss_short.pptx">[20-mins slides]; </a> 
+ 	 	<a href="./slides/LHP_ss_long.pptx">[1-hour slides].</a>  
+       <a href="https://www.youtube.com/watch?v=TQcFeSSRSd4">[video].</a>
+ 	  <ul>
+ 	    <li> Tufts university, August, 2024.  </li>  
+   	  <li> Quantum Information Processing (QIP), Jan, 2024.  </li>  
+      <li> Joint center for quantum information and computer science (QuICS), University of Maryland, Nov, 2023</li> 
+      <li> Theory Seminar, Tsinghua University, Nov, 2023.</li>
+      <li> AWS-Chan Seminar; Theory Seminar; Caltech, October, 2023. </li>
+    </ul>  
+</li>
+  </ul>
+</li>
+</ul>
 
-    <h4><span class="subsection-mark" aria-hidden="true">■</span>Classical simulation and complexity</h4>
-    <p class="intro">
-      I also develop classical algorithms and complexity results to understand when
-      quantum many-body problems are classically tractable.
-    </p>
-    <ul class="paper-list">
-      <li>
-        <i>High-Temperature Fermionic Gibbs States are Mixtures of Gaussian States</i>, 2025.
-        <p class="authors">Akshar Ramkumar, Yiyi Cai, Yu Tong, Jiaqing Jiang</p>
-        <p>
-          [QIP 2026 Contributed Talk],
-          [<a href="https://arxiv.org/abs/2505.09730">Arxiv:2505.09730</a>]
-        </p>
-      </li>
-      <li>
-        <i>Positive bias makes tensor-network contraction tractable</i>, 2024.
-        <p class="authors">Jiaqing Jiang, Jielun Chen, Norbert Schuch, Dominik Hangleiter</p>
-        <p>
-          [QIP 2025 Contributed Talk], [STOC 2025],
-          [<a href="https://arxiv.org/abs/2410.05414">Arxiv:2410.05414</a>]
-        </p>
-      </li>
-      <li>
-        <i>Local Hamiltonian Problem with succinct ground state is MA-Complete</i>, 2023.
-        <p class="authors">Jiaqing Jiang</p>
-        <p>
-          [QIP 2024 Contributed Talk], [Accepted by PRX Quantum],
-          [<a href="https://arxiv.org/abs/2309.10155">Arxiv:2309.10155</a>]
-        </p>
-      </li>
-    </ul>
-  </div>
+</div>
 
-  <div id="Talks">
-    <h3>Talks and Slides</h3>
-    <ul>
-      <li style="margin-left:1em">
-        Ground-energy estimation of quantum impurity models is in BQP,
-        <a href="https://arxiv.org/abs/2610.02167">Arxiv:2610.02167</a>;
-        <a href="https://simons.berkeley.edu/talks/jiaqing-jiang-uc-berkeley-2026-07-24">[video]</a>
-        <ul>
-          <li>Invited talk, Simons Institute, UC Berkeley, July, 2026.</li>
-        </ul>
-      </li>
-      <li style="margin-left:1em">
-        Predicting properties of quantum thermal states from a single trajectory,
-        <a href="https://arxiv.org/abs/2602.12539">Arxiv:2602.12539</a>;
-        <a href="./slides/IPAM2026.pdf">[1-hour slides]</a>,
-        <a href="https://youtu.be/gWBHy5QH3i4?si=f0_ppC1cmHY9X2jm">[video]</a>
-        <ul>
-          <li>IPAM workshop, New Frontiers in Quantum Algorithms for Open Quantum Systems, UCLA, January, 2026.</li>
-        </ul>
-      </li>
-      <li style="margin-left:1em">
-        How Hamiltonian Complexity differs from Quantum Chemistry,
-        <a href="./slides/HC_differ_QC.pptx">[1-hour slides]</a>,
-        <a href="https://simons.berkeley.edu/talks/jiaqing-jiang-simons-institute-2025-07-10">[video]</a>
-        <ul>
-          <li>Quantum Summer Cluster Workshop, Simons Institute, UC Berkeley, July, 2025.</li>
-        </ul>
-      </li>
-      <li style="margin-left:1em">
-        Quantum Metropolis algorithm via weak measurement,
-        <a href="https://arxiv.org/abs/2406.16023">Arxiv:2406.16023</a>;
-        <a href="./slides/QMetropolis.pptx">[1-hour slides]</a>,
-        <a href="https://www.youtube.com/watch?v=SmgJn3Nlj1I">[video]</a>
-        <ul>
-          <li>Quantum Information Processing (QIP 2025), March, 2025.</li>
-          <li>MIT Seminar, MIT, August, 2024.</li>
-          <li>Ohio State University, September, 2024.</li>
-          <li>University of Waterloo, Quantum Innovators workshop, November, 2024.</li>
-          <li>Nanjing University, November, 2024.</li>
-          <li>Theory Seminar, Caltech, November, 2024.</li>
-        </ul>
-      </li>
-      <li style="margin-left:1em">
-        Gibbs state preparation for commuting Hamiltonian: Mapping to classical Gibbs sampling,
-        <a href="https://arxiv.org/abs/2410.04909">Arxiv:2410.04909</a>;
-        <a href="https://www.youtube.com/watch?v=Z5rLz9ihIpU">[video]</a>
-        <ul>
-          <li>Quantum Information Processing (QIP 2025), March, 2025.</li>
-          <li>Workshop on Mathematical Challenges of Quantum Algorithms for Open Quantum Systems, Simons Institute, Berkeley, October, 2024.</li>
-        </ul>
-      </li>
-      <li style="margin-left:1em">
-        Introduction to Commuting Local Hamiltonian problems,
-        <a href="./slides/CLHP_intro.pptx">[45-mins slides]</a>,
-        <a href="https://www.youtube.com/watch?v=h1dsIeC_xx8">[video]</a>
-        <ul>
-          <li>Workshop on Quantum PCP, Area Laws, and Quantum Gravity, Simons Institute, Berkeley, March, 2024.</li>
-        </ul>
-      </li>
-      <li style="margin-left:1em">
-        Local Hamiltonian Problem with succinct ground state is MA-complete,
-        <a href="https://arxiv.org/abs/2309.10155">Arxiv:2309.10155</a>;
-        <a href="./slides/LHP_ss_short.pptx">[20-mins slides]</a>,
-        <a href="./slides/LHP_ss_long.pptx">[1-hour slides]</a>,
-        <a href="https://www.youtube.com/watch?v=TQcFeSSRSd4">[video]</a>
-        <ul>
-          <li>Tufts University, August, 2024.</li>
-          <li>Quantum Information Processing (QIP), January, 2024.</li>
-          <li>Joint Center for Quantum Information and Computer Science (QuICS), University of Maryland, November, 2023.</li>
-          <li>Theory Seminar, Tsinghua University, November, 2023.</li>
-          <li>AWS-Chan Seminar; Theory Seminar; Caltech, October, 2023.</li>
-        </ul>
-      </li>
-    </ul>
-  </div>
 
-  <div id="Activities">
-    <h3>Activities</h3>
-    <ul>
-      <li><b>Program Committee:</b> <u>QIP</u> 2027; <u>TQC</u> 2026, 2025.</li>
-      <li>
-        <b>Conference Reviews:</b> <u>QIP</u> 2026, 2025, 2024, 2023, 2022;
-        <u>TQC</u> 2025, 2024; <u>STOC</u> 2026, 2025; <u>FOCS</u> 2026;
-        <u>SODA</u> 2026; <u>ITCS</u> 2024; <u>ICALP</u> 2026, 2025.
-      </li>
-      <li>
-        <b>Journal Reviews:</b> Physical Review Letters, PRX Quantum,
-        Physical Review B, Physical Review Applied, Quantum, Science Advances,
-        Communications in Mathematical Physics, IEEE Transactions on Information Theory.
-      </li>
-    </ul>
-  </div>
 
-</body>
+
+
+<div id="Activities">
+  <h3 align="left">Activities</h3>
+
+
+<ul>
+ 	<li> <b>  Program Committee:</b>  <u>QIP</u> 2027;   <u>TQC</u>  2026, 2025</li> 
+	 <li> <b> Conference Reviews: </b>   <u>QIP</u> 2026, 2025,2024, 2023,2022, <u>TQC</u> 2025, 2024   <u>STOC</u>  2026, 2025;  <u>FOCS</u>  2026;  <u>SODA</u> 2026  <u>ITCS</u>  2024;  <u>ICALP</u> 2026, 2025;    </li>
+	 <li> <b> Journal Reviews: </b> Physical Review Letters, PRX Quantum, Physical Review B, Physical Review Applied, Quantum, Science Advances, Communication in mathematical physics, IEEE transaction on information theory  
+</ul>
+</div>
+
+
 </html>
+
+
+
+
